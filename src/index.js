@@ -1,17 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+//Create a react app from scratch.
+//It should display a h1 heading.
+//It should display an unordered list (bullet points).
+//It should contain 3 list elements.
+var React = require("react");
+var ReactDOM = require("react-dom");
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+ReactDOM.render(
+  <div>
+    <h1>Displaying Something</h1>
+    <ul>
+      <li>Milk</li>
+      <li>Ghee</li>
+      <li>paneer</li>
+    </ul>
+  </div>,
+  document.getElementById("root")
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
